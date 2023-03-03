@@ -8,7 +8,7 @@ export const SpecficPokemonProvider = ({ children }) => {
             await axios.get(url).then(function (response) {
                 setSpecificPokemon(response.data.species);
             });
-        }   
+        }
     };
     return (
         <SpecficContext.Provider value={{ getUrl }}>
